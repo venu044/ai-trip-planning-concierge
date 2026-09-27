@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-09-11T15:21:00.870531+00:00",
+  "session_id": "demo-session-0001",
+  "raw_request": "We're 2 people looking at 6 days in Bali, budget around $900 total, mostly want a relaxed itinerary.",
+  "classification": {
+    "category": "itinerary",
+    "desk_response": "Itinerary desk: I can help you put together a day-by-day plan for this trip. Starting point: \"We're 2 people looking at 6 days in Bali, budget around $900 total, mostly want a relaxed itinerary.\"."
+  },
+  "trip_request": {
+    "destination": "Bali",
+    "travelers": 2,
+    "duration_days": 6,
+    "budget": 900.0
+  },
+  "feasibility": {
+    "budget_status": "needs-review",
+    "per_person_per_day_usd": 75.0,
+    "pipeline_path": [
+      "budget_screening",
+      "supervisor",
+      "cost_optimization",
+      "recommendation"
+    ],
+    "trip_tier": "Budget",
+    "tier_explanation": "At ~$75.00 per person/day, this trip is workable at the Budget tier: guesthouses, local transport, and a lean itinerary."
+  },
+  "followup_conversation": [
+    {
+      "role": "system",
+      "content": "Trip context -- destination: Bali, travelers: 2, duration_days: 6, budget: 900.0 USD. Recommended tier: Budget."
+    },
+    {
+      "role": "human",
+      "content": "What is that budget per person per day?"
+    },
+    {
+      "role": "ai",
+      "content": "That's $75.00 per person per day."
+    },
+    {
+      "role": "human",
+      "content": "What is 15% off that total for an early-bird discount?"
+    },
+    {
+      "role": "ai",
+      "content": "15% off 900.00 is 765.00 (you save 135.00)."
+    },
+    {
+      "role": "human",
+      "content": "What is the weather like there in that month?"
+    },
+    {
+      "role": "ai",
+      "content": "Bali, Indonesia: Warm and humid year-round (26-31C); Apr-Oct is the drier season. Best months to visit: May, June, September."
+    }
+  ]
+}
